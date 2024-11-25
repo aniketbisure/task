@@ -1,0 +1,311 @@
+ /* General Body Styling */
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Browse Topics Section */
+  section {
+    padding: 2.5rem 1rem;
+  }
+  
+  h1, h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:nth-child(1) {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  button:nth-child(n+2) {
+    background-color: #e5e7eb;
+    color: #374151;
+  }
+  
+  button:nth-child(n+2):hover {
+    background-color: #d1d5db;
+  }
+  
+  /* Cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    width: 100vh;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .card img {
+    width: auto;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.25rem;
+    color: #2d3748;
+    font-weight: 600;
+  }
+  
+  .card p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0.5rem 0;
+  }
+  
+  .card span {
+    display: inline-block;
+    background-color: #bfdbfe;
+    color: #3b82f6;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 9999px;
+    margin-top: 1rem;
+  }
+  
+  /* How Does It Work Section */
+  .bg-teal-100 {
+    background-color: #d1fae5;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .step-icon {
+    background-color: #38b2ac;
+    color: white;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .step-content h3 {
+    font-size: 1.125rem;
+    color:white;
+    
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .step-content p {
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin: 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-teal-500 {
+    color: #38b2ac;
+  }
+  
+  .text-teal-500:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  
+  
+      /* General Body Styling */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafb;
+        color: #2d3748;
+      }
+  
+      /* Section Styling */
+      .how-it-works {
+        background: linear-gradient(to bottom, rgba(91, 210, 243, 0.8), rgba(46, 168, 158, 0.8)), url('https://businessfirstfamily.com/wp-content/uploads/2015/09/corporate-office-interior-design.jpg') center/cover no-repeat;
+        color: white;
+        padding: 4rem 1rem;
+      }
+  
+      .how-it-works h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 2rem;
+      }
+  
+      /* Steps Container */
+      .steps {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+      }
+  
+      .steps::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 25px; /* Align with the icon center */
+        width: 2px;
+        background-color: rgba(255, 255, 255, 0.5); /* Vertical connecting line */
+      }
+  
+      /* Step Box */
+      .step {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 2rem;
+      }
+  
+      .step:last-child {
+        margin-bottom: 0;
+      }
+  
+      /* Step Icon Styling */
+      .step-icon {
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: #2ea89e;
+        border: 3px solid rgba(255, 255, 255, 0.5); /* Circular border */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        z-index: 1;
+      }
+  
+      /* Step Content Styling */
+      .step-content {
+        margin-left: 1.5rem;
+      }
+  
+      .step-content h3 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+  
+      .step-content p {
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #ffffff;
+      }
+  
+      /* Learn More Button */
+      .learn-more {
+        text-align: center;
+        margin-top: 2rem;
+      }
+  
+      .learn-more a {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: white;
+        color: #2ea89e;
+        text-decoration: none;
+        border-radius: 50%;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+  
+      .learn-more a:hover {
+        background-color: #2ea89e;
+        color: white;
+      }
+      .navbar ul {
+      display: flex;
+      justify-content: center;
+      background: white;
+      padding: 10px;
+      margin: 0;
+      list-style: none;
+  }
+  
+  .navbar ul li {
+      margin: 0 15px;
+      padding: 10px 15px;
+      cursor: pointer;
+      color: #555;
+      border-bottom: 2px solid transparent;
+  }
+  
+  .navbar ul li.active {
+      color: #007bff;
+      border-bottom: 2px solid #007bff;
+  }
+  
+  .cards {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+      padding: 20px;
+  }
+  
+  .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      width: 300px; /* Increased width */
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+      position: relative;
+  }
+  
+  .card .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #007bff;
+      color: white;
+      border-radius: 50%;
+      padding: 5px 10px;
+  }
+  
+  .card img {
+      width: auto;
+      height: 100px;
+      margin-bottom: 1rem;
+  }
+  .badge{
+      border-radius: none;
+  }
